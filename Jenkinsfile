@@ -1,3 +1,10 @@
-steps { 
-      git branch: 'main', url: 'https://github.com/hieuhieu112/ReactStaticCICD.git'
+pipeline {
+    agent any
+    stages {
+        stage('Clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/hieuhieu112/ReactStaticCICD.git'
+            }
+        }
+    }
 }
