@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/hieuhieu112/ReactStaticCICD.git'
+                echo 'Hiiii'
             }
         }
     }
