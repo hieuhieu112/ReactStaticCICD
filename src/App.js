@@ -10,7 +10,7 @@ import { Home, Product, Products, AboutPage, ContactPage, Cart, Login, Register,
 
 function App() {
     return ( 
-        <BrowserRouter>
+        <BrowserRouter basename='/ReactStaticCICD'>
         <Provider store={store}>
           <Routes>
             <Route path="/" element={<Home />} />
