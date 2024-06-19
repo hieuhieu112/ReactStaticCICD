@@ -1,6 +1,7 @@
 {
   "name": "ecommerce",
   "version": "0.1.0",
+  "homepage": "https://hieuhieu112.github.io/ReactStaticCICD/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.5",
