@@ -29,3 +29,4 @@ root.render(
     </Provider>
   </BrowserRouter>
 );
+export default root;
