@@ -27,11 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Install dependencies
-      working-directory: ReactStaticCICD
       run: npm ci
     - name: Run build
-      working-directory: ReactStaticCICD
       run: CI=false npm run build --if-present
     - name: Run tests
-      working-directory: ReactStaticCICD
       run: CI=false npm test --if-present --quiet
