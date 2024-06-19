@@ -14,6 +14,6 @@ test("renders comps", async () => {
 
 // import sum from "./sum";
 
-// test("adds 1 + 2 to equal 3", () => {
+// test("adds 1 + 2 to equal 3", () => {A
 //   expect(sum(1, 2)).toBe(3);
 // });
