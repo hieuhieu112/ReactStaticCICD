@@ -42,17 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "jest": {
-    "transformIgnorePatterns": [
-      "node_modules/(?!axios)"
-    ],
-    "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-      "^axios$": "axios/dist/node/axios.cjs"
-    }
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.1"
   }
 }
