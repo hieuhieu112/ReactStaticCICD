@@ -26,6 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - name: Install dependencies
+      working-directory: reactstaticcicd
+      run: npm ci
+    - name: Run build
+      working-directory: reactstaticcicd
+      run: CI=false npm run build --if-present
+    - name: Run tests
+      working-directory: reactstaticcicd
+      run: CI=false npm test --if-present --quiet
